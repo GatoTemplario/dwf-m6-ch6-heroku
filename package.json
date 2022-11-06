@@ -1,12 +1,14 @@
 {
   "name": "capitulo6-deploy",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev:front":"parcel serve index.html",
+    "build:front":"parcel build index.html",
     "dev": "nodemon ./src/server-side/express.ts",
     "test": "ava",
-    "build": "tsc index.ts",
+    "build:api": "tsc index.ts",
+    "build": "yarn build:front && build:api",
     "start": "node index.js"
   },
   "dependencies": {
