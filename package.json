@@ -1,6 +1,7 @@
 {
   "name": "capitulo6-deploy",
   "version": "1.0.0",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "dev:front":"parcel serve index.html",
