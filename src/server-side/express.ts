@@ -13,7 +13,7 @@ const app = express()
 
 const usersCollection = fs.collection("users")
 const roomsCollection = fs.collection("rooms")
-app.use(express.static("../../dist"))
+app.use(express.static("dist"))
 // const collection = fs.collection("users") + collection.doc('1234') == const doc = fs.doc("users/1234")
 
 app.use(express.json());
